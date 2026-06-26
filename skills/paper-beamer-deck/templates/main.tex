@@ -1,0 +1,178 @@
+% =============================================================================
+% main.tex — single-paper deep-dive Beamer deck (Simple theme)
+%
+% Copy this file into:  ./slides/<paper-short-name>/main.tex
+% Compile with XeLaTeX (preferred):  make   (or xelatex twice)
+%
+% Path assumptions (see the Makefile in this template):
+%   - This deck lives at      <workspace>/slides/<paper-short-name>/
+%   - The theme lives at the workspace root:  <workspace>/beamerthemeSimple.sty
+%   - The Makefile sets TEXINPUTS=../../: so xelatex finds the theme .sty.
+%   - \graphicspath below makes \includegraphics find this deck's local figures/
+%     (and the workspace root, for any shared images you keep there).
+%
+% Theme: this deck loads the workspace-wide theme from <workspace>/theme.tex if it
+% exists, otherwise falls back to the bundled Simple theme. To restyle ALL decks at
+% once, edit <workspace>/theme.tex (see the workspace AGENTS.md "Theming"). To restyle
+% only THIS deck, replace the \InputIfFileExists line below with your own \usetheme{...}.
+% =============================================================================
+\documentclass[aspectratio=169]{beamer}
+\InputIfFileExists{../../theme.tex}{}{\usetheme{Simple}}
+
+% Resolve this deck's local figures/ (and the workspace root for shared images).
+\graphicspath{{figures/}{../../}}
+
+\usepackage{booktabs}   % nicer tables
+\usepackage{amsmath}
+
+% ---------- talk metadata (fill in) ----------
+\title{<Paper Title>}
+\subtitle{<One-sentence takeaway>}
+\author{Presenter: <your name>}
+\institute{Paper: <Authors>, <Venue/Year>}
+\date{\today}
+
+\begin{document}
+
+% ---------- 1. Title ----------
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% ---------- Outline ----------
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% =============================================================================
+% Fill in the sections below. Keep ONE main idea per slide. Split crowded
+% slides instead of shrinking fonts. Compile + visually inspect after each
+% section (see SKILL.md sections 6 and 10).
+% =============================================================================
+
+% ---------- 2. Motivation ----------
+\section{Motivation}
+\begin{frame}{Motivation: The Problem}
+  \begin{itemize}
+    \item What problem does the paper address?
+    \item Why does it matter?
+    \item Why was existing work insufficient?
+  \end{itemize}
+\end{frame}
+
+% ---------- 3. Background ----------
+\section{Background}
+\begin{frame}{Background}
+  % Enough context for a grad student who has NOT read the paper.
+  \begin{itemize}
+    \item Key concept 1
+    \item Key concept 2
+  \end{itemize}
+\end{frame}
+
+% ---------- 4. Problem Formulation ----------
+\section{Problem Formulation}
+\begin{frame}{Problem Formulation}
+  \begin{itemize}
+    \item Target system / setting
+    \item Assumptions and constraints
+    \item What is being optimized
+  \end{itemize}
+\end{frame}
+
+% ---------- 5. Key Insight ----------
+\section{Key Insight}
+\begin{frame}{Key Insight}
+  % Prefer a diagram here over text.
+  \begin{itemize}
+    \item What did the authors notice?
+    \item Why is it non-obvious?
+    \item Why does the approach make sense?
+  \end{itemize}
+\end{frame}
+
+% ---------- 6. Design / Method ----------
+\section{Design / Method}
+\begin{frame}{Design Overview}
+  % Split complex mechanisms across multiple slides (Detail I / II / III).
+\end{frame}
+
+% ---------- 7. Implementation ----------
+\section{Implementation}
+\begin{frame}{Implementation}
+  \begin{itemize}
+    \item Platform: simulator / RTL / compiler / runtime / hardware
+    \item What is modeled vs. actually implemented; what is idealized
+  \end{itemize}
+\end{frame}
+
+% ---------- 8. Evaluation Setup ----------
+\section{Evaluation Setup}
+\begin{frame}{Evaluation Setup}
+  \begin{itemize}
+    \item Baselines / workloads / metrics
+    \item Hardware or simulation environment; fairness of comparison
+  \end{itemize}
+\end{frame}
+
+% ---------- 9. Results ----------
+\section{Results}
+% Pattern for a hard result figure (split as needed):
+%   Result Setup -> How to Read This Figure -> Main Trend -> Interpretation & Caveats
+\begin{frame}{Result: <what is measured>}
+  % \begin{figure}\includegraphics[width=0.85\linewidth]{figures/result1.png}\end{figure}
+  % Label reused paper figures: "From the paper." / "Adapted from the paper."
+  \begin{itemize}
+    \item What question this answers; what is compared; axes
+    \item Trend; authors' conclusion; whether it is justified; caveats
+  \end{itemize}
+\end{frame}
+
+% ---------- 10. Strengths ----------
+\section{Strengths \& Limitations}
+\begin{frame}{Strengths}
+  \begin{itemize}
+    \item What the paper does well
+  \end{itemize}
+\end{frame}
+
+% ---------- 11. Limitations ----------
+\begin{frame}{Limitations}
+  \begin{itemize}
+    \item Assumptions / missing baselines / scalability / cost / mismatch
+  \end{itemize}
+\end{frame}
+
+% ---------- 12. Discussion Questions ----------
+\section{Discussion \& Takeaways}
+\begin{frame}{Discussion Questions}
+  \begin{enumerate}
+    \item Question about assumptions / generality / methodology
+    \item \dots (3--6 total; avoid trivially-answered questions)
+  \end{enumerate}
+\end{frame}
+
+% ---------- 13. Takeaways ----------
+\begin{frame}{Takeaways}
+  \begin{itemize}
+    \item Point 1
+    \item Point 2
+    \item Point 3
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{If You Remember Only One Thing\dots}
+  \begin{center}
+    \Large <the single most important takeaway>
+  \end{center}
+\end{frame}
+
+% ---------- 14. Research Extensions ----------
+\begin{frame}{Research Extensions}
+  \begin{itemize}
+    \item Concrete follow-up direction 1
+    \item Concrete follow-up direction 2
+  \end{itemize}
+\end{frame}
+
+\end{document}

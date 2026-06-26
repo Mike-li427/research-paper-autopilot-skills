@@ -1,0 +1,411 @@
+{
+  "skills": [
+    {
+      "directory": "research-paper-autopilot",
+      "skill_name": "research-paper-autopilot",
+      "description": "Orchestrate an evidence-grounded, end-to-end research-to-paper project package from idea to auditable manuscript, reproducibility pack, and submission materials. Use when the user asks for research-to-publication, idea-to-paper, literature-",
+      "files": 12,
+      "bytes": 116481
+    },
+    {
+      "directory": "academic-pipeline",
+      "skill_name": "academic-pipeline",
+      "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-rev",
+      "files": 30,
+      "bytes": 420716
+    },
+    {
+      "directory": "deep-research",
+      "skill_name": "deep-research",
+      "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 7 modes: full research, quick brief, paper review, lit-review, fact-check, Socratic guided research dialogue, and systematic review with opti",
+      "files": 52,
+      "bytes": 594771
+    },
+    {
+      "directory": "academic-paper",
+      "skill_name": "academic-paper",
+      "description": "12-agent academic paper writing pipeline. 10 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF o",
+      "files": 60,
+      "bytes": 820789
+    },
+    {
+      "directory": "academic-paper-reviewer",
+      "skill_name": "academic-paper-reviewer",
+      "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick asses",
+      "files": 25,
+      "bytes": 285789
+    },
+    {
+      "directory": "academic-research-suite",
+      "skill_name": "academic-research-suite",
+      "description": ">",
+      "files": 745,
+      "bytes": 7640456
+    },
+    {
+      "directory": "automated-research-paper",
+      "skill_name": "automated-research-paper",
+      "description": "Build and run an evidence-grounded automated research paper pipeline. Use when Codex is asked to turn a research idea into a reproducible paper project, scaffold a conference paper workflow, conduct real literature discovery, design and run",
+      "files": 9,
+      "bytes": 40168
+    },
+    {
+      "directory": "literature-review",
+      "skill_name": "literature-review",
+      "description": "Use this skill for literature reviews, related work, survey outlines, paper landscape mapping, gap analysis, citation-backed synthesis, and turning search results into a coherent research narrative.",
+      "files": 1,
+      "bytes": 1857
+    },
+    {
+      "directory": "literature-survey-skill",
+      "skill_name": "survey",
+      "description": "Literature survey assistant with four modes: /survey intent (capture student goals, expertise, and success criteria), /survey triage (landscape mapping via NotebookLM), /survey deepen (structured reading with craft and visualization extract",
+      "files": 16,
+      "bytes": 82662
+    },
+    {
+      "directory": "research-gap-analysis",
+      "skill_name": "research-gap-analysis",
+      "description": "Use when the user asks to analyze, compare, or synthesize MULTIPLE specified papers together — e.g. \"analyze these papers and find research gaps\", \"compare paper A, B, and C\", \"what has been done and what remains open\", \"find research direc",
+      "files": 7,
+      "bytes": 39473
+    },
+    {
+      "directory": "scientific-brainstorming",
+      "skill_name": "scientific-brainstorming",
+      "description": "Use this skill for scientific topic ideation, research-question generation, hypothesis refinement, project framing, novelty analysis, experiment direction brainstorming, and turning broad interests into tractable research plans.",
+      "files": 1,
+      "bytes": 1874
+    },
+    {
+      "directory": "scientific-visualization",
+      "skill_name": "scientific-visualization",
+      "description": "Use this skill for scientific figures, data visualization strategy, publication-quality plots, multi-panel figure planning, visual encoding choices, and figure audits for scientific manuscripts or presentations.",
+      "files": 1,
+      "bytes": 1898
+    },
+    {
+      "directory": "statistical-analysis",
+      "skill_name": "statistical-analysis",
+      "description": "Use this skill for statistical analysis planning, test selection, model interpretation, power analysis, reproducible analysis scripts, result reporting, and checking whether quantitative claims match data and methods.",
+      "files": 1,
+      "bytes": 2089
+    },
+    {
+      "directory": "citation-check-skill",
+      "skill_name": "citation-check-skill",
+      "description": "Vision-enabled verification gate with web search. Use when users want to (1) verify slides/reports/PDFs/images against authoritative online sources, (2) validate that citations actually exist and say what's claimed, (3) check charts/graphs/",
+      "files": 4,
+      "bytes": 30864
+    },
+    {
+      "directory": "ccf-common",
+      "skill_name": "ccf-common",
+      "description": "Shared governance for the CCFA family: routing, trigger registry, task modes, handoff modes, source registry, privacy/evidence policy, ccfa.yaml, and artifact contracts. Use only when maintaining or auditing CCFA skills; not for ordinary re",
+      "files": 16,
+      "bytes": 85813
+    },
+    {
+      "directory": "ccf-experiment-designer",
+      "skill_name": "ccf-experiment-designer",
+      "description": "Design CCF paper evidence packages: datasets, baselines, metrics, ablations, robustness tests, result-table templates, and real-result figure/table presentation. Use for experiment design, benchmark planning, baseline selection, ablation de",
+      "files": 4,
+      "bytes": 9290
+    },
+    {
+      "directory": "ccf-idea-optimizer",
+      "skill_name": "ccf-idea-optimizer",
+      "description": "Turn rough CCF research directions into concrete problem, gap, insight, method, novelty, and evidence plans. Use for idea optimization, fuzzy idea concretization, research direction shaping, early direction exploration, salvage routes, 优化id",
+      "files": 9,
+      "bytes": 30234
+    },
+    {
+      "directory": "ccf-idea-reviewer",
+      "skill_name": "ccf-idea-reviewer",
+      "description": "Strictly score, rank, compare, and triage early CCF research ideas with prior-art awareness and venue-fit risk. Use only for explicit idea scoring, idea ranking, idea review, acceptance-potential triage, idea评分, 选题评分, 选题排名, 严格评审. Do not pol",
+      "files": 7,
+      "bytes": 30798
+    },
+    {
+      "directory": "ccf-integrity-auditor",
+      "skill_name": "ccf-integrity-auditor",
+      "description": "Audit CCF paper integrity: claim-support alignment, result-to-claim consistency, numeric consistency, terminology consistency, figure/table-to-text consistency, existing citation existence, BibTeX metadata, and citation-context support. Use",
+      "files": 2,
+      "bytes": 2515
+    },
+    {
+      "directory": "ccf-literature-monitor",
+      "skill_name": "ccf-literature-monitor",
+      "description": "Monitor arXiv, OpenReview, conference feeds, labs, projects, and competitor papers for new work that may overlap with a user's idea. Use for arxiv-watch, novelty-check, trend-scouting, competitor-tracking, paper tracking, 竞品监控, 新论文追踪, 论文跟踪,",
+      "files": 4,
+      "bytes": 11961
+    },
+    {
+      "directory": "ccf-literature-searcher",
+      "skill_name": "ccf-literature-searcher",
+      "description": "Search and screen literature, related work, datasets, benchmarks, citation evidence, and research opportunity maps for CCF workflows. Use for literature search, related work, prior art, benchmark search, direction scouting, 文献检索, 相关工作, benc",
+      "files": 4,
+      "bytes": 17158
+    },
+    {
+      "directory": "ccf-paper-reviewer",
+      "skill_name": "ccf-paper-reviewer",
+      "description": "Review CCF/target-venue manuscripts end to end: scientific novelty, soundness, evidence, simulated reviewers, AC/meta-review, score risk, writing logic, paragraph clarity, LaTeX/format presentation, and reviewer-facing revision actions. Use",
+      "files": 16,
+      "bytes": 62317
+    },
+    {
+      "directory": "ccf-paper-to-exemplar",
+      "skill_name": "ccf-paper-to-exemplar",
+      "description": "Convert user-provided conference paper PDFs into distilled writing exemplar cards for the ccf-paper-writer skill. Extracts full text, analyzes writing patterns by venue, and produces ready-to-use exemplar cards with story patterns, abstract",
+      "files": 2,
+      "bytes": 12421
+    },
+    {
+      "directory": "ccf-paper-writer",
+      "skill_name": "ccf-paper-writer",
+      "description": "Plan, draft, revise, polish, compress, and presentation-adapt CCF research paper text while preserving user-supplied idea scope and evidence. Use for paper writing, abstract/introduction/related work/method/experiment writing, polishing, pa",
+      "files": 16,
+      "bytes": 151435
+    },
+    {
+      "directory": "ccf-pipeline-orchestrator",
+      "skill_name": "ccf-pipeline-orchestrator",
+      "description": "Plan and coordinate CCF paper-project stages, goals, constraints, success criteria, gates, artifacts, handoffs, and ccfa.yaml status across the CCFA family. Use for workflow planning, task decomposition, project status, stage gates, next-sk",
+      "files": 5,
+      "bytes": 8284
+    },
+    {
+      "directory": "ccf-project-scaffolder",
+      "skill_name": "ccf-project-scaffolder",
+      "description": "Create CCF paper project folders, select or copy LaTeX templates, initialize ccfa.yaml, and prepare artifact directories. Use for project scaffolding and reproducible workspace setup. Do not generate research content.",
+      "files": 3,
+      "bytes": 3728
+    },
+    {
+      "directory": "ccf-rebuttal-writer",
+      "skill_name": "ccf-rebuttal-writer",
+      "description": "Write and organize CCF conference rebuttals, author responses, response letters, revision summaries, reviewer-comment ledgers, and conservative resubmission adaptation plans. Use for rebuttal, author response, AC/meta-review response, revis",
+      "files": 10,
+      "bytes": 29233
+    },
+    {
+      "directory": "ccf-submission-checker",
+      "skill_name": "ccf-submission-checker",
+      "description": "Check CCF conference submission readiness: venue LaTeX/template/page/anonymity/camera-ready rules, LaTeX/PDF build, metadata, fonts, supplementary files, artifact/reproducibility package, code/data/model release plan, licenses, seeds, and p",
+      "files": 2,
+      "bytes": 3006
+    },
+    {
+      "directory": "nature-academic-search",
+      "skill_name": "nature-academic-search",
+      "description": ">-",
+      "files": 44,
+      "bytes": 219407
+    },
+    {
+      "directory": "nature-citation",
+      "skill_name": "nature-citation",
+      "description": ">-",
+      "files": 12,
+      "bytes": 104143
+    },
+    {
+      "directory": "nature-data",
+      "skill_name": "nature-data",
+      "description": ">-",
+      "files": 13,
+      "bytes": 46055
+    },
+    {
+      "directory": "nature-figure",
+      "skill_name": "nature-figure",
+      "description": ">-",
+      "files": 98,
+      "bytes": 30752524
+    },
+    {
+      "directory": "nature-polishing",
+      "skill_name": "nature-polishing",
+      "description": "Polish, restructure, or translate academic prose into Nature-leaning English using writing-strategy principles, curated Nature/Nature Communications article patterns, and phrase-level support from Academic Phrasebank. Use whenever the user ",
+      "files": 29,
+      "bytes": 61901
+    },
+    {
+      "directory": "nature-reader",
+      "skill_name": "nature-reader",
+      "description": "Build full-paper Chinese-English side-by-side, figure/table-aware, source-grounded Markdown readers for journal or conference papers from PDF, DOI, arXiv, publisher HTML, or pasted text. Use whenever the user asks to translate or read a pap",
+      "files": 15,
+      "bytes": 30672
+    },
+    {
+      "directory": "nature-response",
+      "skill_name": "nature-response",
+      "description": ">-",
+      "files": 24,
+      "bytes": 67559
+    },
+    {
+      "directory": "nature-reviewer",
+      "skill_name": "nature-reviewer",
+      "description": ">-",
+      "files": 9,
+      "bytes": 31925
+    },
+    {
+      "directory": "nature-writing",
+      "skill_name": "nature-writing",
+      "description": "Draft, restructure, or plan Nature-style manuscript sections from author-provided claims, results, figures, notes, or Chinese drafts. Use when the user wants to write or rebuild an abstract, introduction, related-work, method, experiments, ",
+      "files": 65,
+      "bytes": 149608
+    },
+    {
+      "directory": "paper-spine",
+      "skill_name": "paper-spine",
+      "description": "Write, rewrite, or build a paper or report (journal, conference, report, review, competition) end to end, then output LaTeX/PDF/Word. The main PaperSpine entry point that orchestrates every step.",
+      "files": 17,
+      "bytes": 182760
+    },
+    {
+      "directory": "paper-spine-audit",
+      "skill_name": "paper-spine-audit",
+      "description": "Audits PaperSpine outputs for missing artifacts, shallow revisions, logic transfer, unsupported claims, and translation coverage. (internal /paperspine step)",
+      "files": 16,
+      "bytes": 160456
+    },
+    {
+      "directory": "paper-spine-build",
+      "skill_name": "paper-spine-build",
+      "description": "Builds a paper or report from materials using the shared PaperSpine research, motivation, and rationale workflow. (internal /paperspine step)",
+      "files": 10,
+      "bytes": 57267
+    },
+    {
+      "directory": "paper-spine-citation",
+      "skill_name": "paper-spine-citation",
+      "description": "Builds a citation support bank for Introduction, Discussion, and background claims. (internal /paperspine step)",
+      "files": 7,
+      "bytes": 53005
+    },
+    {
+      "directory": "paper-spine-intake",
+      "skill_name": "paper-spine-intake",
+      "description": "Collects PaperSpine workflow options and writes config for flash/pro, scene, language, and inputs. (internal /paperspine step)",
+      "files": 9,
+      "bytes": 76763
+    },
+    {
+      "directory": "paper-spine-latex",
+      "skill_name": "paper-spine-latex",
+      "description": "Handles LaTeX project assembly, figure placement, citations, labels, and compile-safe cleanup. (internal /paperspine step)",
+      "files": 10,
+      "bytes": 57721
+    },
+    {
+      "directory": "paper-spine-research",
+      "skill_name": "paper-spine-research",
+      "description": "Researches target requirements, downloads reference materials, learns strong examples, and prepares motivation options. (internal /paperspine step)",
+      "files": 17,
+      "bytes": 65694
+    },
+    {
+      "directory": "paper-spine-rewrite",
+      "skill_name": "paper-spine-rewrite",
+      "description": "Rewrites an existing manuscript from confirmed motivation, research, paragraph-level rationale, and evidence. (internal /paperspine step)",
+      "files": 10,
+      "bytes": 53943
+    },
+    {
+      "directory": "paper-spine-translate",
+      "skill_name": "paper-spine-translate",
+      "description": "Produces the complete translation_zh/ package with row-by-row translation of all required artifacts and full-paper translation. (internal /paperspine step)",
+      "files": 5,
+      "bytes": 39692
+    },
+    {
+      "directory": "paper-spine-update",
+      "skill_name": "paper-spine-update",
+      "description": "Checks and updates PaperSpine from GitHub while preserving global config; use for upgrades, latest-version checks, or local reinstall.",
+      "files": 6,
+      "bytes": 36472
+    },
+    {
+      "directory": "paper-writing-skill",
+      "skill_name": "paper-writing",
+      "description": "Research paper writing assistant that enforces Arpit Gupta's editorial principles, voice profile, and writing workflow. MANDATORY TRIGGERS: Use this skill whenever the user mentions writing a paper, drafting a section, revising a section, e",
+      "files": 27,
+      "bytes": 219004
+    },
+    {
+      "directory": "paper-beamer-deck",
+      "skill_name": "paper-beamer-deck",
+      "description": "Use when the user asks to summarize, explain, teach, or build slides for ONE specific paper — e.g. \"make slides for this paper\", \"create a Beamer presentation for paper X\", \"read ./papers/foo.pdf and generate a detailed slide deck\". Produce",
+      "files": 26,
+      "bytes": 170796
+    },
+    {
+      "directory": "PaperBanana",
+      "skill_name": "paperbanana",
+      "description": "Generate publication-quality academic diagrams from paper methodology text",
+      "files": 3,
+      "bytes": 13066
+    },
+    {
+      "directory": "papi",
+      "skill_name": "papi",
+      "description": "This skill should be used when the user wants to interact with their paper database — listing papers, searching content, showing paper details, adding papers, or exporting context. Matches queries like \"search papers for X\", \"add this arXiv",
+      "files": 2,
+      "bytes": 6712
+    },
+    {
+      "directory": "papi-ask",
+      "skill_name": "papi-ask",
+      "description": "Query papers using RAG (PaperQA2 or LEANN). Use when user needs synthesized answers from papers, asks \"what does paper X say about Y\", or needs cited responses.",
+      "files": 1,
+      "bytes": 1416
+    },
+    {
+      "directory": "papi-compare",
+      "skill_name": "papi-compare",
+      "description": "Compare papers for a decision. Use when user asks \"which paper should I use\", \"compare approaches\", or needs to choose between methods/algorithms.",
+      "files": 1,
+      "bytes": 1083
+    },
+    {
+      "directory": "papi-curate",
+      "skill_name": "papi-curate",
+      "description": "Create project notes from papers. Use when user wants to document paper findings, create implementation notes, or summarize papers for a project.",
+      "files": 1,
+      "bytes": 1082
+    },
+    {
+      "directory": "papi-ground",
+      "skill_name": "papi-ground",
+      "description": "Ground responses in paper excerpts with citations. Use when user wants cited claims, quotes, or needs to avoid hallucination about paper content.",
+      "files": 1,
+      "bytes": 908
+    },
+    {
+      "directory": "papi-init",
+      "skill_name": "papi-init",
+      "description": "Setup paperpipe agent integration. Use when user wants to add papi to a project's CLAUDE.md/AGENTS.md or initialize paper support.",
+      "files": 1,
+      "bytes": 1241
+    },
+    {
+      "directory": "papi-verify",
+      "skill_name": "papi-verify",
+      "description": "Verify code against paper. Use when user asks \"does this match the paper\", \"check my implementation\", or is implementing equations/algorithms from literature.",
+      "files": 1,
+      "bytes": 1239
+    },
+    {
+      "directory": "pdf",
+      "skill_name": "pdf",
+      "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and ext",
+      "files": 4,
+      "bytes": 15097
+    }
+  ],
+  "missing": []
+}

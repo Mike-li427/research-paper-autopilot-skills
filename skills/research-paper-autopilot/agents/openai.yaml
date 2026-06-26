@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Paper Autopilot"
+  short_description: "Evidence-grounded idea-to-paper pipeline / 基于证据的科研论文全流程"
+  default_prompt: "Use $research-paper-autopilot to build an evidence-grounded paper project package from my research idea, with real literature, auditable results, and reproducibility materials. / 用 $research-paper-autopilot 把我的研究想法做成基于真实证据的论文项目包。"

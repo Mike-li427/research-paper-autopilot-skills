@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/paper-beamer-deck/figures.schema.json",
+  "title": "paper-beamer-deck figures manifest",
+  "type": "object",
+  "required": ["schema_version", "source_pdf", "dpi", "bbox_units", "bbox_origin", "extractor", "pages", "figures"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "source_pdf": { "type": "string" },
+    "dpi": { "type": "integer", "minimum": 1 },
+    "bbox_units": { "const": "pdf_points" },
+    "bbox_origin": { "type": "string" },
+    "extractor": {
+      "type": "object",
+      "required": ["primary", "status"],
+      "properties": {
+        "primary": { "type": "string" },
+        "status": { "enum": ["ok", "fallback"] },
+        "reason": { "type": ["string", "null"] },
+        "attempts": { "type": "array" },
+        "filters": { "type": "object" },
+        "override_path": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "image_path", "width_px", "height_px", "width_pt", "height_pt"],
+        "properties": {
+          "page": { "type": "integer", "minimum": 1 },
+          "image_path": { "type": "string" },
+          "width_px": { "type": "integer", "minimum": 1 },
+          "height_px": { "type": "integer", "minimum": 1 },
+          "width_pt": { "type": "number", "exclusiveMinimum": 0 },
+          "height_pt": { "type": "number", "exclusiveMinimum": 0 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "figures": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/figure_record" }
+    },
+    "filtered": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "manual_review": { "type": "object" }
+  },
+  "$defs": {
+    "figure_record": {
+      "type": "object",
+      "required": ["index", "label", "page", "bbox", "caption", "image_path", "method", "status"],
+      "properties": {
+        "index": { "type": "integer", "minimum": 1 },
+        "label": { "type": ["string", "null"] },
+        "page": { "type": ["integer", "null"], "minimum": 1 },
+        "bbox": {
+          "anyOf": [
+            { "type": "null" },
+            {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 4,
+              "items": { "type": "number" }
+            }
+          ]
+        },
+        "caption": { "type": "string" },
+        "image_path": { "type": ["string", "null"] },
+        "method": { "type": "string" },
+        "status": { "enum": ["ok", "needs_manual_review"] },
+        "type": { "type": "string" },
+        "confidence": { "type": "number" },
+        "reason": { "type": "string" },
+        "source": { "type": "object" },
+        "data_paths": { "type": "object" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,188 @@
+% =============================================================================
+% main.tex — research-gap-analysis presentation deck (Simple theme)
+%
+% Copy this file into:  ./slides/<topic-short-name>-gap-analysis/main.tex
+% Also copy the build machinery from the paper-beamer-deck skill:
+%   cp skills/paper-beamer-deck/templates/Makefile  ./slides/<topic>-gap-analysis/
+%
+% Compile with XeLaTeX (preferred):  make   (or xelatex twice)
+%
+% This deck summarizes a MULTI-PAPER analysis. It is structured around the
+% analysis (landscape -> taxonomy -> comparison -> graded gaps -> directions),
+% NOT around one paper. For all Beamer mechanics, layout robustness, and the
+% mandatory PDF-visual-inspection discipline, follow paper-beamer-deck/SKILL.md.
+%
+% Path assumptions (same as a single-paper deck):
+%   - Deck at  <workspace>/slides/<topic>-gap-analysis/
+%   - Theme    <workspace>/beamerthemeSimple.sty  (no logos/assets)
+%   - The reused Makefile sets TEXINPUTS=../../: so xelatex finds the theme .sty.
+%   - Theme: loads <workspace>/theme.tex if present, else falls back to Simple.
+%     Restyle all decks by editing <workspace>/theme.tex (see workspace AGENTS.md).
+% =============================================================================
+\documentclass[aspectratio=169]{beamer}
+\InputIfFileExists{../../theme.tex}{}{\usetheme{Simple}}
+
+\graphicspath{{figures/}{../../}}
+
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+% ---------- talk metadata (fill in) ----------
+\title{Research Gap Analysis: <Topic>}
+\subtitle{<One-sentence takeaway>}
+\author{Presenter: <your name>}
+\institute{N papers analyzed}
+\date{\today}
+
+\begin{document}
+
+% ---------- 1. Title ----------
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% ---------- 2. Outline ----------
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% =============================================================================
+% Keep ONE main idea per slide. Put long reasoning in notes.md, not on slides.
+% The comparison matrix is the #1 failure mode: SIMPLIFY or SPLIT it instead of
+% shrinking the font. Compile + visually inspect after each section.
+% =============================================================================
+
+% ---------- 3. Scope & Executive Summary ----------
+\section{Scope \& Summary}
+\begin{frame}{Scope}
+  \begin{itemize}
+    \item Papers included / area analyzed
+    \item Intentionally out of scope
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Executive Summary}
+  \begin{block}{Headline finding}
+    <the single most important conclusion of the analysis>
+  \end{block}
+\end{frame}
+
+% ---------- 4. Papers Analyzed ----------
+\section{Papers Analyzed}
+\begin{frame}{Papers Analyzed}
+  \small
+  \begin{enumerate}
+    \item <Title> --- <Authors>, <Venue/Year>
+    \item <Title> --- <Authors>, <Venue/Year>
+    \item <Title> --- <Authors>, <Venue/Year>
+  \end{enumerate}
+\end{frame}
+
+% ---------- 5. Problem Landscape ----------
+\section{Problem Landscape}
+\begin{frame}{Problem Landscape}
+  % Prefer a diagram (problem-space map / layered system view) over text.
+  \begin{itemize}
+    \item The shared problem these papers address
+    \item Why it matters
+  \end{itemize}
+\end{frame}
+
+% ---------- 6. Taxonomy ----------
+\section{Taxonomy}
+\begin{frame}{Taxonomy}
+  % A diagram or compact table organizing the papers by key dimensions.
+  \begin{center}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Paper & Dimension A & Dimension B \\
+    \midrule
+    P1 & \dots & \dots \\
+    P2 & \dots & \dots \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------- 7. Cross-Paper Comparison ----------
+\section{Cross-Paper Comparison}
+\begin{frame}{Cross-Paper Comparison (simplified)}
+  % SIMPLIFIED matrix only. Full matrix stays in analysis/<topic>/paper-matrix.md.
+  % Split across slides if it does not fit -- do not shrink to fit.
+  \small
+  \begin{center}
+  \begin{tabular}{@{}llll@{}}
+    \toprule
+    Paper & Mechanism & Workload & Does NOT cover \\
+    \midrule
+    P1 & \dots & \dots & \dots \\
+    P2 & \dots & \dots & \dots \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+\end{frame}
+
+% ---------- 8. Coverage ----------
+\section{Coverage}
+\begin{frame}{What Is Well Covered}
+  \begin{itemize}
+    \item Mature problems / techniques across the set
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{What Is Missing}
+  \begin{itemize}
+    \item Missing cases / assumptions / evaluations / system settings
+  \end{itemize}
+\end{frame}
+
+% ---------- 9. Candidate Gaps (one slide per strong gap) ----------
+\section{Candidate Gaps}
+\begin{frame}{Gap 1: <name> \hfill \textbf{[Strong]}}
+  \begin{itemize}
+    \item \textbf{Statement:} <gap>
+    \item \textbf{Why it matters:} <\dots>
+    \item \textbf{Why unsolved by the set:} <\dots>
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Other Gaps (Medium / Weak)}
+  \begin{itemize}
+    \item \textbf{[Medium]} <gap> --- needs sharper framing / better evaluation
+    \item \textbf{[Weak]} <gap> --- too broad / incremental / already addressed
+  \end{itemize}
+\end{frame}
+
+% ---------- 10. Most Promising Directions ----------
+\section{Directions}
+\begin{frame}{Most Promising Directions}
+  \begin{enumerate}
+    \item <direction> --- what would make it publishable
+    \item <direction>
+  \end{enumerate}
+\end{frame}
+
+% ---------- 11. Weak / Dangerous Directions ----------
+\begin{frame}{Weak / Dangerous Directions}
+  \begin{itemize}
+    \item <tempting but weak direction> --- why to avoid it
+  \end{itemize}
+\end{frame}
+
+% ---------- 12. Recommended Next Papers ----------
+\section{Next Steps}
+\begin{frame}{Recommended Next Papers}
+  \begin{itemize}
+    \item <paper / lead> --- why relevant \hfill \emph{(to verify)}
+  \end{itemize}
+  \footnotesize Do not fabricate citations; mark unverified entries ``to verify''.
+\end{frame}
+
+% ---------- 13. Final Takeaway ----------
+\begin{frame}{Final Takeaway}
+  \begin{center}
+    \Large <what the selected papers collectively imply>
+  \end{center}
+\end{frame}
+
+\end{document}

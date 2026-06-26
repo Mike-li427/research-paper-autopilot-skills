@@ -1,0 +1,34 @@
+{
+  "name": "research-paper-autopilot-bundle",
+  "version": "0.1.0",
+  "description": "Evidence-grounded Codex skills bundle for end-to-end research paper projects.",
+  "author": {
+    "name": "Research Paper Autopilot contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "academic-writing",
+    "paper",
+    "reproducibility",
+    "codex-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Research Paper Autopilot Bundle",
+    "shortDescription": "Evidence-grounded research-to-paper skills bundle",
+    "longDescription": "A Codex skills bundle centered on research-paper-autopilot, with specialist skills for literature review, experiments, CCF/Nature workflows, writing, review, citation checks, reproducibility, and submission packages.",
+    "developerName": "Research Paper Autopilot contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Research",
+      "Code"
+    ],
+    "defaultPrompt": [
+      "Use $research-paper-autopilot for my paper project.",
+      "Build a cited literature-to-paper package.",
+      "Audit my experiment evidence before drafting."
+    ]
+  }
+}

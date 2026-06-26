@@ -1,0 +1,4 @@
+interface:
+  display_name: "Automated Research Paper"
+  short_description: "Run evidence-grounded research paper pipelines"
+  default_prompt: "Use $automated-research-paper to turn this research idea into a reproducible paper project with real literature, experiments, evidence checks, and LaTeX output."
