@@ -23,7 +23,7 @@ The bundle is centered on:
 - Evidence and verification tools: `citation-check-skill`, `statistical-analysis`, `papi-*` paper database/RAG helpers, and `papi-verify` for checking code against papers.
 - Research artifact utilities: `pdf`, `scientific-visualization`, and `PaperBanana`.
 
-The exact skill list is maintained in `skills_manifest.json`. Redistribution and provenance notes are in `THIRD_PARTY_SKILLS.md`.
+The exact skill list is maintained in `skills_manifest.json`. A human-readable index with each skill's purpose, repository path, and direct GitHub URL is available in `INCLUDED_SKILLS.md`. Redistribution and provenance notes are in `THIRD_PARTY_SKILLS.md`.
 
 ## Who This Is For
 
