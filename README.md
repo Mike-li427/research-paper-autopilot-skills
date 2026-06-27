@@ -25,6 +25,14 @@ The bundle is centered on:
 
 The exact skill list is maintained in `skills_manifest.json`. A human-readable index with each skill's purpose, repository path, and direct GitHub URL is available in `INCLUDED_SKILLS.md`. Redistribution and provenance notes are in `THIRD_PARTY_SKILLS.md`.
 
+## Third-Party Skills Notice
+
+This repository is a bundle and integration layer, not an authorship claim over every included skill. Many supporting skills under `skills/` are vendored from pre-existing local/community/third-party Codex skill installations so the workflow can be cloned and installed in one step.
+
+The repository-level documentation, installer, validator, manifest, plugin metadata, and local `research-paper-autopilot` orchestration/hardening files are bundle/integration work. Supporting skills may have their own authors, upstream projects, licenses, and redistribution terms.
+
+Before public redistribution or commercial use, review `THIRD_PARTY_SKILLS.md`, preserve upstream license/notice files, and add missing attribution when known.
+
 ## Who This Is For
 
 Use this bundle if you want Codex to help with:

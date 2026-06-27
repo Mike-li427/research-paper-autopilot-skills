@@ -4,6 +4,15 @@
 
 仓库地址：[https://github.com/Mike-li427/research-paper-autopilot-skills](https://github.com/Mike-li427/research-paper-autopilot-skills)
 
+## 第三方与署名说明
+
+这个清单是 inventory，不是原创归属声明。本仓库把多个已有的本地/community/第三方 Codex skills 打包到一起，方便克隆后直接安装使用。除顶层文档、安装/校验脚本、manifest、plugin metadata 和本地 `research-paper-autopilot` 总控加固文件外，supporting skills 可能有各自的上游作者、许可证和再分发要求。
+
+使用或二次分发前，请同时查看：
+
+- `THIRD_PARTY_SKILLS.md`
+- 各 skill 目录内可能存在的 `LICENSE`、`NOTICE`、`README` 或 attribution 文件
+
 ## 快速安装
 
 安装全部 skill：
